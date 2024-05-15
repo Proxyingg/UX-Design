@@ -1,0 +1,11 @@
+header {
+  border: 1px solid red;
+
+  width: 100%;
+  height: 100px;
+
+  background-image: url("../Media/Logo.png"), url("../Media/Banner (500x100).png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250px 100px, cover;
+  background-position: center, left;
+}
