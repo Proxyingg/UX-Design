@@ -1,12 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  display: inline-block;
   font-family: 'metal', serif;
-}
-
-title {
-  display: none;
 }
 
 dropdown {
@@ -72,4 +67,8 @@ nav ul li a {
 header content {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+nav ul {
+  display: inline-block;
 }
