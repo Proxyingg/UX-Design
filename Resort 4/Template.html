@@ -1,30 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>FAQ</title>
-        <link rel="stylesheet" href="CSS.css">
+        <title>TITLE</title>
+        <link rel="stylesheet" href=".css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>The heading</h1>
             <nav>
                 <ul>
-                    <li><a href="Home Page.html">Home page</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li>Explore
-                        <ul>
-                            <li><a href="Shops.html">Shops</a></li>
-                            <li><a href="Restaurants.html">Restaurants</a></li>
-                            <li><a href="Attractions.html">Attractions</a></li>
-                            <li><a href="Facilities.html">Facilities</a></li>
-                        </ul>
+                    <li><a target="_self" href="Home Page.html">Home page</a></li>
+                    <li><a target="_self" href="Gallery.html">Gallery</a></li>
+                    <dropdown>
+                        <li>Explore</li>
+                        <dropdowncontent>
+                            <a target="_self" href="Shops.html">Shops</a>
+                            <a target="_self" href="Restaurants.html">Restaurants</a>
+                            <a target="_self" href="Attractions.html">Attractions</a>
+                            <a target="_self" href="Facilities.html">Facilities</a>
+                        </dropdowncontent>
+                    </dropdown>
                     </li>
-                    <li><a href="Room Selection.html">Rooms</a></li>
-                    <li>Support<ul>
-                            <li><a href="FAQ.html">FAQ</a></li>
-                            <li><a href="Support.html">Contact us</a></li>
-                        </ul>
-                    </li>
+                    <li><a target="_self" href="Room Selection.html">Rooms</a></li>
+                    <dropdown>
+                        <li>Support</li>
+                        <dropdowncontent>
+                            <a target="_self" href="FAQ.html">FAQ</a>
+                            <a target="_self" href="Support.html">Contact us</a>
+                        </dropdowncontent>
+                    </dropdown>
+                </ul>
             </nav>
         </header>
         <content>
