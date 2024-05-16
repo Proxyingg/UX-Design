@@ -5,6 +5,10 @@
   font-family: 'metal', serif;
 }
 
+title {
+  display: none;
+}
+
 dropdown {
   display: inline-block;
   position: relative;
