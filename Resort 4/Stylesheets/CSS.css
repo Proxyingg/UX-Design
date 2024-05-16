@@ -1,4 +1,35 @@
 * {
-    padding:0px;
-    margin:0px;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    font-family: 'metal', serif;
+}
+
+dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+dropdowncontent {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+dropdown:hover dropdowncontent {
+    display: block;
+}
+
+dropdowncontent a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+dropdowncontent a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
 }
