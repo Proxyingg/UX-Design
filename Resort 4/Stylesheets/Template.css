@@ -1,4 +1,4 @@
-/*sets up the webpage*/
+/*Sets up the webpage*/
 * {
   margin: 0px;
   padding: 0px;
@@ -6,7 +6,7 @@
   z-index: 0;
 }
 
-/*sets header*/
+/*Sets header*/
 header h1 {
   background-color: black;
   color: white;
@@ -34,6 +34,7 @@ nav button:hover {
 
 #nav-home {
   top: 66px;
+  left: 0px;
 }
 
 #nav-gallery {
@@ -94,7 +95,7 @@ nav div.dropdown:hover div.dropdown-content {
   display: block;
 }
 
-/*moves the main into the correct spot*/
+/*Moves the main into the correct spot*/
 main {
   position: relative;
   top: 50px;
