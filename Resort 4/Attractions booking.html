@@ -2,20 +2,36 @@
 <html>
 
 <head>
-  <title>[Title]</title>
+  <title>Attractions Booking</title>
   <link rel="stylesheet" href="Stylesheets/Template.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
 
   <style>
-    /* style goes here. */
+    form {
+      padding: 10px;
+      font-weight: bold;
+      font-size: 30px;
+      background-color: #aaaaaa;
+      color: black;
+    }
+
+    form label {
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    form button {
+      padding: 0 10px;
+      font-size: 20px;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>[PAGE NAME]</h1>
+    <h1>Attractions Booking</h1>
     <nav>
       <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
       <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
@@ -39,8 +55,13 @@
     </nav>
   </header>
   <main>
-    <h1>This is the main part of the web page</h1>
-    <p>The quick brown fox jumps over the lazy dog.</p>
+    <form>
+      <legend>Book your tickets</legend>
+      <label for="content">Type in all the required information: </label>
+      <input name="Content" id="content" type="text" required></input>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
   </main>
 </body>
 
