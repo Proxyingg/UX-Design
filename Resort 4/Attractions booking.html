@@ -30,9 +30,10 @@
       top: -10px;
     }
 
-    form button {
-      padding: 0 10px;
-      font-size: 20px;
+    form select option,
+    form select {
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
     }
   </style>
 </head>
@@ -65,9 +66,16 @@
   <main>
     <form>
       <legend>Book your tickets</legend>
-      <label for="content">Type in all the required information: </label>
-      <textarea name="Content" id="content" required></textarea>
+      <label for="type">Select ticket type: </label>
+      <select id="type" value="None">
+        <option value="None"> -Please select- </option>
+        <option value="amusement-park">Amusement park</option>
+        <option value="beach">Beach</option>
+        <option value="aquarium">Aquarium</option>
+        <option value="indoor">Indoor activity centre</option>
+      </select>
       <br>
+      <input type="dropdown"></input>
       <button type="submit">Submit</button>
     </form>
   </main>
