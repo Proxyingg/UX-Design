@@ -15,13 +15,56 @@
     }
 
     main {
-      padding-left: 10px;
-      ;
+      text-align: center;
     }
 
     main p {
       padding-left: 20px;
       font-size: 20px;
+    }
+
+    main div {
+      border: 2px solid black;
+      width: 70%;
+      margin: 50px auto;
+      border-radius: 40px;
+      line-height: 1.6;
+    }
+
+    main div :not(img, button) {
+      padding-top: 20px;
+    }
+
+    main div button {
+      margin: 20px 0px;
+    }
+
+    main img {
+      padding-left: 0px;
+      width: 100%;
+    }
+
+    main button {
+      background-color: #005f66;
+      color: white;
+      border: none;
+
+    }
+
+    main button:hover {
+      background-color: #004c52;
+    }
+
+    main table {
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    main table,
+    main table th,
+    main table td {
+      border: 2px solid black;
+      border-collapse: collapse;
     }
   </style>
 </head>
@@ -52,24 +95,65 @@
     </nav>
   </header>
   <main>
-    <h1>Theme park</h1>
+    <img src="Media/Banner (1000x100).png">
+    <h1>Fun.</h1>
     <h2>Get ready to have an amazing time at the fun attractions available right here at the resort!</h2>
-    <h3>Amusement park 4</h3>
-    <p>Get ready to have the time of your life inside our very own hybrid theme park with many rides auitable for all ages.</p>
-    <p>Theres also a water park ig.</p>
-    <p>You can book tickets online or at one of the many ticketing coutners here!</p>
-    <img src="Media/Amusement park.png">
-    <a href="Attractions booking.html"><button>Book Your tickets here!</button></a>
-    <h3>Relaxing Beach</h3>
-    <p>Have a relaxing time at the beach, laying in the sand and enjoying the ocean. Aternatively, you and your family can have fun building sandcasltles and swim in the ocean.</p>
-    <img src="Media/Beach.png">
-    <h3>Aquarioum</h3>
-    <p>Have a wonderful time learning all about the wonders of the ocean, we have fishes rangin from goldfishh to stingrays and jellyfish!</p>
-    <p>You can book tickets online or at one of the many ticketing coutners here!</p>
-    <a href="Attractions booking.html"><button>Book Your tickets here!</button></a>
-    <h3>Indoor activity centre</h3>
-    <p>Do drugs and shit.</p>
-    <a href="Attractions booking.html"><button>Book Your tickets here!</button></a>
+    <div>
+      <h1>Amusement park 4</h1>
+      <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i2401adc8c9decc07/version/1454162276/image.jpg">
+      <p>Get ready to have the time of your life inside our very own hybrid theme park with many rides auitable for all ages.</p>
+      <p>Theres also a water park for double the fun at amusement park 4!</p>
+      <p>You can book tickets online or at one of the many ticketing coutners here!</p>
+      <table>
+        <tr>
+          <th>Ticket type</th>
+          <th>Weekday Price</th>
+          <th>Weekeend Price</th>
+        </tr>
+        <tr>
+          <td>Adult</td>
+        </tr>
+        <tr>
+          <td>&#10024;Adult premuim&#10024;</td>
+        </tr>
+        <tr>
+          <td>Child</td>
+        </tr>
+        <tr>
+          <td>&#10024;Child premuim&#10024;</td>
+        </tr>
+        <tr>
+          <td>Senior</td>
+        </tr>
+        <tr>
+          <td>&#10024;Senior premuim&#10024;</td>
+        </tr>
+        <tr>
+          <td>Family discount</td>
+        </tr>
+      </table>
+      <a href="Attractions booking.html"><button>Book Your tickets now! &nbsp; ></button></a>
+    </div>
+    <div>
+      <h1>Relaxing Beach</h1>
+      <img src="Media/Banner (500x100).png">
+      <p>Have a relaxing time at the beach, laying in the sand and enjoying the ocean. Aternatively, you and your family can have fun building sandcasltles and swim in the ocean.</p>
+    </div>
+    <div>
+      <h1>Aquarioum</h1>
+      <img src="Media/Banner (500x100).png">
+      <p>Have a wonderful time learning all about the wonders of the ocean, we have fishes rangin from goldfishh to stingrays and jellyfish!</p>
+      <p>You can book tickets online or at one of the many ticketing coutners here!</p>
+      <a href="Attractions booking.html"><button>Book Your tickets now! &nbsp; ></button></a>
+    </div>
+    <div>
+      <h1>indoor activity centre</h1>
+      <img src="Media/Banner (500x100).png">
+      <p>Do drugs and shit.</p>
+      <a href="Attractions booking.html"><button>Book Your tickets now! &nbsp; ></button></a>
+
+    </div>
+
   </main>
 </body>
 
