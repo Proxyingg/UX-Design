@@ -6,12 +6,14 @@
   z-index: 0;
 }
 
-/*Sets header*/
+/*sets header*/
 header h1 {
   background-color: black;
   color: white;
   padding-left: 20px;
-
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 /*Nav bar*/
@@ -22,7 +24,7 @@ nav button {
   background-color: #005f66;
   color: white;
   border: 0px;
-  position: absolute;
+  position: fixed;
   float: left;
   cursor: pointer;
   z-index: 1;
@@ -98,5 +100,5 @@ nav div.dropdown:hover div.dropdown-content {
 /*Moves the main into the correct spot*/
 main {
   position: relative;
-  top: 50px;
+  top: 116px;
 }
