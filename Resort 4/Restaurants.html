@@ -1,140 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Resort 4's Fine Dining Restaurant</title>
-  <link href="restaurant4css.css" rel="stylesheet">
+  <link href="Stylesheets/restaurant4css.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Stylesheets/Template.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
 </head>
-<div id = "topnavbar">
-<div class="topnav">
+<div id="topnavbar">
+  <div class="topnav">
     <a href="#home">Home</a>
     <a class="active" href="#Restaurant">Restaurant</a>
     <a href="#Attractions">Attractions</a>
     <a href="#Bookings">Bookings</a>
-</div>
+  </div>
 </div>
 
-  <div id="banner">
-    <div id = "bannerwords">
-        <p>Restaurant 4<p>
-    </div>
-    </div>
-    <div id = "Introduction">
-        <p>
-            Welcome to Resort 4 's Exquisite Dining Experience! Residing within the heart of Singapore, our restaurant offers more than just mouth-watering dishes; it also provides a culinary journey like no other. 
-            At Restaurant 4, we pride ourselves on crafting unforgettable dining experiences, where every meal is a fusion of flavors, textures, and artistry.
-        </p>
-    </div>
-  <div id = "dhil">
+<div id="banner">
+  <div id="bannerwords">
+    <p>Restaurant 4
+    <p>
+  </div>
+</div>
+<div id="Introduction">
+  <p>
+    Welcome to Resort 4 's Exquisite Dining Experience! Residing within the heart of Singapore, our restaurant offers more than just mouth-watering dishes; it also provides a culinary journey like no other.
+    At Restaurant 4, we pride ourselves on crafting unforgettable dining experiences, where every meal is a fusion of flavors, textures, and artistry.
+  </p>
+</div>
+<div id="dhil">
 
   <button type="button" class="collapsible">Menu</button>
-  <div class="content" id = "menu">
+  <div class="content" id="menu">
     <p>
+    <ul>
+      <div class="box">
+        <p>
         <ul>
-            <div class="box">
-                <p>
-                    <ul>
-                        <li><b>Starters</b>
-                            <ul>
-                                <li>Bruschetta</li>
-                                <li>Blackberry Cobbler</li>
-                                <li>Fried Mushroom</li>
-                            </ul>
-                        </li>
+          <li><b>Starters</b>
+            <ul>
+              <li>Bruschetta</li>
+              <li>Blackberry Cobbler</li>
+              <li>Fried Mushroom</li>
+            </ul>
+          </li>
 
-                </p>
-                </div>
-                <div class="box">
-                    <p>
-                    <ul>
-                        <li>
-                            <b>Main Course</b>
-                        <ul>
-                            <li>Fried Calamari</li>
-                            <li>Squid Ink Raviolli</li>
-                            <li>Tom Kha Soup</li>
-                        </ul>
-                    </li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="box">
-                <p>                   
-                    <ul>
-                        <li>
-                            <b>Dessert</b>
-                        <ul>
-                            <li>Chocolate Cake</li>
-                            <li>Blueberry Tart</li>
-                            <li>Banana Pudding</li>
-                        </ul>
-                    </li>
-                    </ul>
-                </p>
-                </div>
-                <div class="box">
-                    <p>                   
-                        <ul>
-                            <li>
-                                <b>Beverages</b>
-                            <ul>
-                                <li>Coffee</li>
-                                <li>Tea</li>
-                                <li>Juice</li>
-                            </ul>
-                        </li>
-                        </ul>
-                    </p>
-                </div>
+          </p>
+      </div>
+      <div class="box">
+        <p>
+        <ul>
+          <li>
+            <b>Main Course</b>
+            <ul>
+              <li>Fried Calamari</li>
+              <li>Squid Ink Raviolli</li>
+              <li>Tom Kha Soup</li>
+            </ul>
+          </li>
         </ul>
+        </p>
+      </div>
+      <div class="box">
+        <p>
+        <ul>
+          <li>
+            <b>Dessert</b>
+            <ul>
+              <li>Chocolate Cake</li>
+              <li>Blueberry Tart</li>
+              <li>Banana Pudding</li>
+            </ul>
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="box">
+        <p>
+        <ul>
+          <li>
+            <b>Beverages</b>
+            <ul>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Juice</li>
+            </ul>
+          </li>
+        </ul>
+        </p>
+      </div>
+    </ul>
     </p>
   </div>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+
+
+<div id="main" class "content">
+  <script src="dhiljs.js"></script>
+
+</div>
+
+<div id="booking">
+  <div id="bookingtext">
+
+    <h1>Operating Hours:</h1>
+    <h3>10:00am to 10:00pm Daily</h3>
+    <p></p>
+    <h1>Enquires</h1>
+
+    <h3>+65 9127 8282</h3>
+
+    <a id="grahhh" href="file:///C:/Users/mmoey/OneDrive/WebDev/Practical/Week1/restaurantform.html" target="_blank">Click here to book!</a>
+  </div>
+  <div id="bookingimage">
+
   </div>
 
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-    </script>
 
+  </body>
 
-
-    <div id ="main" class "content">
-    <script src = "dhiljs.js"></script>
-
-    </div>
-
-    <div id = "booking">
-        <div id = "bookingtext">
-      
-        <h1>Operating Hours:</h1>
-        <h3>10:00am to 10:00pm Daily</h3>
-        <p></p>
-        <h1>Enquires</h1>
-
-        <h3>+65 9127 8282</h3>
-        
-        <a id = "grahhh" href="file:///C:/Users/mmoey/OneDrive/WebDev/Practical/Week1/restaurantform.html" target="_blank">Click here to book!</a>
-        </div>
-        <div id = "bookingimage">
-        
-        </div>
-
-
-</body>
 </html>
