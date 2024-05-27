@@ -1,169 +1,182 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-header{
-  position:relative;
+
+header {
+  position: relative;
   bottom: 70px;
 }
+
 body {
-    background-image: "https://img.freepik.com/free-photo/slightly-textured-wallpaper-pattern_1194-6770.jpg";
-    font-family: 'Raleway', sans-serif;
-  }
-  
+  background-image: "https://img.freepik.com/free-photo/slightly-textured-wallpaper-pattern_1194-6770.jpg";
+  font-family: 'Raleway', sans-serif;
+}
+
 #topnavbar {
   text-align: center;
 }
-  .topnav {
-    background-color: #005f66;
-    overflow: hidden;
-    
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #004c52;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #014247;;
-    color: white;
-  }
 
-  #banner {
-    background-image: url("https://media.istockphoto.com/id/1079901206/photo/3d-render-of-luxury-restaurant-interior.jpg?s=612x612&w=0&k=20&c=kKj5Uw0ZpuWKX8ZX6eXuKGc1sP86fMjIbZJFbWl9-ZM=");
-    background-size: cover;
-    background-position: bottom center;
-    height: 700px;
-    width: 100%;
-    
-  }
-  #Introduction{
-    height: 160px;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    padding: 30px;
-    margin:20px 10px;
-    font-weight:bold;
-    border: 2px solid black;
-    overflow: auto;
-  }
-
-  .box {
-    width: 320px;
-    height: 200px;
-    padding: 5px;
-    margin:10px 5px;
-    border: 2px solid black;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    border-radius: 5px;
-    
-}
-  #bannerwords{
-    text-align: center;
-    color: white;
-    padding: 30px;
-    border: 3px solid white;
-    background-color: #616569;
-    opacity: 0.9;
-    position: relative;
-    top: 300px;
-    width: 400px;
-    margin: 0 auto;
-    font-size: 200%;
-    font-family: 'Lucida Handwriting', cursive;
-    font-size:xx-large;
-  }
-
-
-  
-  #main {
-    
-    text-align: center;
+.topnav {
+  background-color: #005f66;
+  overflow: hidden;
 
 }
-  #dhil {
-    border: 4px solid goldenrod;
-    padding: 30px;
-    margin: 30px;
-    border-radius:20px;
-    font-size:20px;
-    overflow: auto;
-  }
-  button {
-    background-color: #C5C6C7;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 1400px;
 
-  }
-  button:hover {
-    background-color:#616569 ;
-    color: white;
-  }
-  #booking {
-    padding: 30px;
-    background-color: aquamarine;
-    height: 400px
-    
-  }
-  #bookingtext{
-    border: 2px solid black;
-    height: 400px;
-    width: 50%;
-    overflow: auto;
-    float:right;
-  }
-  #bookingimage{
-    background-image: url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
-    background-size: cover;
-    height: 400px;
-    width: 45%;
-    background-position: right top;
-    padding-left:10px;
-  }
-  h1 {
-    color: royalblue;
-    font-size: 30px;
-    font-weight: 600;
-    padding-top: 10px;
-    padding-left:5px;
-    font-family: Metal;
-  }
-  
-  h2 {
-    font-size: 14px;
-    line-height: 48px;
-    padding: 20px 30px;
-  }
-  
-  h3 {
-    font-size: 26px;
-    font-weight: 700;
-    padding: 20px 10px;
-  }
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #004c52;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #014247;
+  ;
+  color: white;
+}
+
+#banner {
+  background-image: url("https://media.istockphoto.com/id/1079901206/photo/3d-render-of-luxury-restaurant-interior.jpg?s=612x612&w=0&k=20&c=kKj5Uw0ZpuWKX8ZX6eXuKGc1sP86fMjIbZJFbWl9-ZM=");
+  background-size: cover;
+  background-position: bottom center;
+  height: 700px;
+  width: 100%;
+
+}
+
+#Introduction {
+  height: 160px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  padding: 30px;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid black;
+  overflow: auto;
+}
+
+.box {
+  width: 320px;
+  height: 200px;
+  padding: 5px;
+  margin: 10px 5px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+#bannerwords {
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border: 3px solid white;
+  background-color: #616569;
+  opacity: 0.9;
+  position: relative;
+  top: 300px;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 200%;
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: xx-large;
+}
+
+
+
+#main {
+
+  text-align: center;
+
+}
+
+#dhil {
+  border: 4px solid goldenrod;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  overflow: auto;
+}
+
+button {
+  background-color: #C5C6C7;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 1400px;
+
+}
+
+button:hover {
+  background-color: #616569;
+  color: white;
+}
+
+#booking {
+  padding: 30px;
+  background-color: aquamarine;
+  height: 400px
+}
+
+#bookingtext {
+  border: 2px solid black;
+  height: 400px;
+  width: 50%;
+  overflow: auto;
+  float: right;
+}
+
+#bookingimage {
+  background-image: url("https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg");
+  background-size: cover;
+  height: 400px;
+  width: 45%;
+  background-position: right top;
+  padding-left: 10px;
+}
+
+h1 {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-family: Metal;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 48px;
+  padding: 20px 30px;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+
 /*Sets up the webpage*/
 * {
   margin: 0px;
@@ -192,7 +205,7 @@ nav button {
   float: left;
   cursor: pointer;
   z-index: 1;
-  padding:12px;
+  padding: 12px;
 }
 
 nav button:hover {
@@ -267,8 +280,9 @@ main {
   position: relative;
   top: 50px;
 }
-#grahhh{
-  background: linear-gradient(270deg,#3DA2D9,#3DD4D9);
+
+#grahhh {
+  background: linear-gradient(270deg, #3DA2D9, #3DD4D9);
   font-size: x-large;
   padding: 20px;
   border-radius: 50px;
