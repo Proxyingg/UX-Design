@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-
+header{
+  position:relative;
+  bottom: 70px;
+}
 body {
     background-image: "https://img.freepik.com/free-photo/slightly-textured-wallpaper-pattern_1194-6770.jpg";
     font-family: 'Raleway', sans-serif;
@@ -79,11 +82,12 @@ body {
     background-color: #616569;
     opacity: 0.9;
     position: relative;
-    top: 200px;
+    top: 300px;
     width: 400px;
     margin: 0 auto;
     font-size: 200%;
     font-family: 'Lucida Handwriting', cursive;
+    font-size:xx-large;
   }
 
 
@@ -142,11 +146,11 @@ body {
   }
   h1 {
     color: royalblue;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 600;
     padding-top: 10px;
     padding-left:5px;
-    font-family: 'Noto', serif;
+    font-family: Metal;
   }
   
   h2 {
@@ -168,14 +172,12 @@ body {
   z-index: 0;
 }
 
-/*sets header*/
+/*Sets header*/
 header h1 {
   background-color: black;
   color: white;
   padding-left: 20px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
 }
 
 /*Nav bar*/
@@ -186,10 +188,11 @@ nav button {
   background-color: #005f66;
   color: white;
   border: 0px;
-  position: fixed;
+  position: absolute;
   float: left;
   cursor: pointer;
   z-index: 1;
+  padding:12px;
 }
 
 nav button:hover {
@@ -262,7 +265,7 @@ nav div.dropdown:hover div.dropdown-content {
 /*Moves the main into the correct spot*/
 main {
   position: relative;
-  top: 116px;
+  top: 50px;
 }
 #grahhh{
   background: linear-gradient(270deg,#3DA2D9,#3DD4D9);
