@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Payment Form</title>
-    <link rel="stylesheet" href="payment.css">
-  </head>
-  <body>
-    <form>
-      <h1 id="head">Payment Form</h1>
-      <h2>Contact information</h2>
-      <p class="same">Name:*<input type="text" name="name" required="" id="name" class="same"></p>
+
+<head>
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="Stylesheets/payment.css">
+</head>
+
+<body>
+  <form action="Thank you.html">
+    <h1 id="head">Payment Form</h1>
+    <h2>Contact information</h2>
+    <p class="same">Name:*<input type="text" name="name" required id="name" class="same"></p>
     <p>Address: <textarea name="address" id="address" rows="6" cols="40" class="same"></textarea></p>
-     <p>Email:* <input type="email" name="email" id="email" value="" required="" class="same"/></p> 
-     <p>Postal code:* <input type="number" name="pincode" id="pincode" value="" required="" class="same"/></p>
+    <p>Email:* <input type="email" name="email" id="email" value="" required class="same" /></p>
+    <p>Postal code:* <input type="number" name="pincode" id="pincode" value="" required class="same" /></p>
     <hr>
     <h2 id="body">Payment Information</h2>
     <p class="same">Card Type:*
-      <select name="card_type" id="card_type" required="" class="same">
+      <select name="card_type" id="card_type" required class="same">
         <option value="">---select a Card type--</option>
         <option value="visa">Visa</option>
         <option value="dbs">DBS</option>
-        <option value="master card">Master Card</option>        
-      </select>    
+        <option value="master card">Master Card</option>
+      </select>
     </p>
     <p class="same">
-      Card Number *<input type="number" name="card Number" id="Card-Number" required="" class="same">
+      Card Number *<input type="number" name="card Number" id="Card-Number" required class="same">
     </p>
     <p class="same">
-      Expiration Date:* <input type="date" name="exp_date" id="exp_date" required="" class="same">
+      Expiration Date:* <input type="date" name="exp_date" id="exp_date" required class="same">
     </p>
     <p class="same">
-      CVV * <input type="password" name="CVV" id="CVV" required="" class="same">
+      CVV * <input type="password" name="CVV" id="CVV" required class="same">
     </p>
-    <input type="submit" name="" id="submit" value="Proceed to payment" class="same"/>
-   
-    </form>
-  </body>
+    <input type="submit" name="" id="submit" value="Proceed to payment" class="same" />
+
+  </form>
+</body>
+
 </html>
