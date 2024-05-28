@@ -1,0 +1,114 @@
+/*Sets up the webpage*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'metal', serif;
+    z-index: 0;
+}
+
+/*sets header*/
+header h1 {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Nav bar*/
+nav button {
+    width: 20%;
+    height: 50px;
+    font-size: 17px;
+    background-color: #005f66;
+    color: white;
+    border: 0px;
+    position: fixed;
+    float: left;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav button:hover {
+    background-color: #004c52;
+}
+
+#nav-home {
+    top: 66px;
+    left: 0px;
+}
+
+#nav-gallery {
+    top: 66px;
+    left: 20%;
+}
+
+#nav-explore {
+    top: 66px;
+    left: 40%;
+}
+
+#nav-rooms {
+    top: 66px;
+    left: 60%;
+}
+
+#nav-support {
+    top: 66px;
+    left: 80%;
+}
+
+#nav-shops {
+    top: calc(66px + 50px*1);
+    left: 40%;
+}
+
+#nav-restaurants {
+    top: calc(66px + 50px*2);
+    left: 40%;
+}
+
+#nav-attractions {
+    top: calc(66px + 50px*3);
+    left: 40%;
+}
+
+#nav-facilities {
+    top: calc(66px + 50px*4);
+    left: 40%;
+}
+
+#nav-faq {
+    top: calc(66px + 50px*1);
+    left: 80%;
+}
+
+#nav-contact {
+    top: calc(66px + 50px*2);
+    left: 80%;
+}
+
+nav div.dropdown div.dropdown-content {
+    display: none;
+}
+
+nav div.dropdown:hover div.dropdown-content {
+    display: block;
+}
+
+/*Moves the main into the correct spot*/
+main {
+    position: relative;
+    top: 116px;
+    background: linear-gradient(90deg,#3DD4D9,#3DA2D9);
+}
+
+.rooms {
+    color: white;
+    width: 400px;
+    height: 300px;
+    padding: 65px 85px;
+    margin: 10px;
+    display:inline-block
+}
