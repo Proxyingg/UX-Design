@@ -1,24 +1,26 @@
 <!DOCTYPE>
 <html>
-  <head>
-    <title>Payment Form</title>
-    <link rel="stylesheet" href="payment.css">
-  </head>
-  <body>
-    <form>
-      <h1 id="head" style="">Payment Form</h1>
-      <h2>Contact information</h2>
-      <p>Name:*<input type="text" name="name" required="" id="name"></p>
-      <fieldset>
-        <legend style="float: left; width: 100%";>Gender*</legend>
+
+<head>
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+  <form action="Thank you.html">
+    <h1 id="head" style="">Payment Form</h1>
+    <h2>Contact information</h2>
+    <p>Name:*<input type="text" name="name" required="" id="name"></p>
+    <fieldset>
+      <legend style="float: left; width: 100%" ;>Gender*</legend>
       <p>
         Male <input type="radio" name="gender" id="male" required=""><br>
         Feamle <input type="radio" name="gender" id="Feamle" required="">
-        </p>
-        </fieldset>
+      </p>
+    </fieldset>
     <p>Address: <textarea name="address" id="address" rows="6" cols="40"></textarea></p>
-     <p>Email:* <input type="email" name="email" id="email" value="" required="" /></p> 
-     <p>Postal code:* <input type="number" name="pincode" id="pincode" value="" required="" /></p>
+    <p>Email:* <input type="email" name="email" id="email" value="" required="" /></p>
+    <p>Postal code:* <input type="number" name="pincode" id="pincode" value="" required="" /></p>
     <hr>
     <h2>Payment Information</h2>
     <p>Card Type:*
@@ -26,8 +28,8 @@
         <option value="">---select a Card type--</option>
         <option value="visa">Visa</option>
         <option value="dbs">DBS</option>
-        <option value="master card">Master Card</option>        
-      </select>    
+        <option value="master card">Master Card</option>
+      </select>
     </p>
     <p>
       Card Number *<input type="number" name="card Number" id="Card Number" required="">
@@ -39,7 +41,8 @@
       CVV * <input type="password" name="CVV" id="CVV" required="">
     </p>
     <input type="submit" name="" id="" value="Proceed to payment" />
-   
-    </form>
-  </body>
+
+  </form>
+</body>
+
 </html>
