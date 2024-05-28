@@ -104,40 +104,68 @@ main {
   padding-bottom: 50px;
 }
 
-#title {
-  text-align: center;
+form {
+  margin: 30px 0;
 }
 
-h2 {
-  margin: 0px 20px;
+fieldset {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 20px;
 }
 
-details {
-  margin: 0 50px;
-  font-size: x-large;
+#Contact, h2, input, select {
+  margin: 0 20px;
 }
 
-summary:hover {
-  color: #005f66;
-  cursor: pointer;
+select {
+  width: 50%;
 }
 
-span {
-  padding: 0 10px;
-  border: 1px solid black;
-  margin: 30px;
-}
-
-#contact {
-  padding: 0 10px;
-  margin-left: 50px;
+#Submit {
+  display: block;
+  width: 20%;
+  margin: 10px auto;
   color: white;
-  background-color: #005f66;
-  border: none;
-  font-size: 17px;
+  background-color: green;
+  border-radius: 2px;
 }
 
-#contact:hover {
-  background-color: #004c52;
+#Submit:hover{
+  cursor: pointer;
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+input:invalid+span::after {
+  position: absolute;
+  content: "\2716";
+  padding-left: 5px;
+}
+
+input:valid+span::after {
+  position: absolute;
+  content: "\2714";
+  padding-left: 5px;
+}
+
+select:invalid+span::after {
+  position: absolute;
+  content: "\2716";
+  padding-left: 5px;
+}
+
+select:valid+span::after {
+  position: absolute;
+  content: "\2714";
+  padding-left: 5px;
+}
+
+fieldset p {
+  margin-top: 20px;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+select:hover {
   cursor: pointer;
 }
