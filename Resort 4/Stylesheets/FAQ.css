@@ -14,6 +14,7 @@ header h1 {
   position: fixed;
   width: 100%;
   z-index: 1;
+  top: 0px;
 }
 
 /*Nav bar*/
@@ -113,6 +114,7 @@ h2 {
 
 details {
   margin: 0 50px;
+  font-size: x-large;
 }
 
 span {
