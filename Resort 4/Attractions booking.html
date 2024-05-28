@@ -25,7 +25,7 @@
       font-size: 20px;
     }
 
-    form input:not([type=range], [type=checkbox]),
+    form input:not([type=range], [type=checkbox], [type=submit]),
     form select {
       font-size: 17px;
       font-family: Arial, Helvetica, sans-serif;
@@ -37,6 +37,31 @@
     form select {
       font-size: 17px;
       font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      border: 2px solid black;
+      border-radius: 30px;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    form legend {
+      text-align: center;
+    }
+
+    form input[type="submit"] {
+      display: block;
+      margin: 20px auto;
+      padding: 0px 10px;
+      font-size: 30px;
+      color: white;
+      background-color: #005f66;
+      border: none;
+    }
+
+    form nput[type="submit"]:hover {
+      background-color: #004c52;
     }
   </style>
 </head>
@@ -67,11 +92,11 @@
     </nav>
   </header>
   <main>
-    <form>
+    <form action="Thank you.html">
       <legend>Book your tickets</legend>
       <label for="type">Select ticket type: </label>
-      <select id="type" value="None">
-        <option value="None"> -Please select- </option>
+      <select id="type" value="None" required>
+        <option value=""> -Please select- </option>
         <option value="amusement-park">Amusement park</option>
         <option value="aquarium">Aquarium</option>
       </select>
@@ -119,10 +144,7 @@
       <label for="expiry-date">Expiry: </label>
       <input type="month" id="expiry-date" name="expiry-date" placeholder="Payment information" required>
       <br>
-      <input type="checkbox" id="terms" required>
-      <label for="terms">I have read and agreed to the <a href="Terms and conditions.html">terms and conditions</a>.</label>
-      <br>
-      <button type="submit">Submit</button>
+      <input type="submit" value="Submit&nbsp;&nbsp;&nbsp;&nbsp;>">
     </form>
   </main>
 </body>
