@@ -117,13 +117,27 @@ details {
   font-size: x-large;
 }
 
+summary:hover {
+  color: #005f66;
+  cursor: pointer;
+}
+
 span {
-  color: white;
-  background-color: #005f66;
+  padding: 0 10px;
+  border: 1px solid black;
   margin: 30px;
 }
 
 #contact {
-  margin: 0px 50px;
-  font-size: large;
+  padding: 0 10px;
+  margin-left: 50px;
+  color: white;
+  background-color: #005f66;
+  border: none;
+  font-size: 17px;
+}
+
+#contact:hover {
+  background-color: #004c52;
+  cursor: pointer;
 }
