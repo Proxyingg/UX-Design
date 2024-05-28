@@ -1,0 +1,241 @@
+/*Sets up the webpage*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'metal', serif;
+  z-index: 0;
+}
+
+#logo {
+  position: fixed;
+  right: 0px;
+  height: 66px;
+  z-index: 2;
+}
+
+#nav-book {
+  position:fixed;
+  background-color: #E0AA14;
+  height: 66px;
+  right: 66px;
+  font-size: 17px;
+  padding: 10px;
+  z-index: 2;
+  border: none;
+}
+
+#nav-book:hover {
+  background-color: #f6bc19;
+}
+
+.homeimg img {
+  width: 100%;
+}
+
+.homeimg {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.welcome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border: 3px solid white;
+  background-color: #616569;
+  opacity: 0.8;
+  position: absolute;
+  width: 40%;
+  font-size: 24px;
+}
+
+#hotel-background {
+  font-size: 20px;
+  margin: auto 0;
+  padding: 30px;
+}
+
+.rank1, .rank2{
+  margin: 45px;
+}
+
+.space{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.l-photo{
+  height: 600px;
+  width: 450px;
+  margin: 85px
+}
+
+.s-photo{
+  height: 500px;
+  width: 450px;
+  margin: 20px 0;
+}
+
+.left-space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-space{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.r-space{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: white;
+  padding: 50px;
+}
+
+.logo2 {
+  display: block;
+  width: 66px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#address {
+  color: black;
+}
+
+.contact {
+  color: black;
+}
+
+/*Sets header*/
+header h1 {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+}
+
+/*Nav bar*/
+nav button {
+  width: 20%;
+  height: 50px;
+  font-size: 17px;
+  background-color: #005f66;
+  color: white;
+  border: 0px;
+  position: fixed;
+  float: left;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav button:hover {
+  background-color: #004c52;
+}
+
+#nav-home {
+  top: 66px;
+  left: 0px;
+}
+
+#nav-gallery {
+  top: 66px;
+  left: 20%;
+}
+
+#nav-explore {
+  top: 66px;
+  left: 40%;
+}
+
+#nav-rooms {
+  top: 66px;
+  left: 60%;
+}
+
+#nav-support {
+  top: 66px;
+  left: 80%;
+}
+
+#nav-shops {
+  top: calc(66px + 50px*1);
+  left: 40%;
+}
+
+#nav-restaurants {
+  top: calc(66px + 50px*2);
+  left: 40%;
+}
+
+#nav-attractions {
+  top: calc(66px + 50px*3);
+  left: 40%;
+}
+
+#nav-facilities {
+  top: calc(66px + 50px*4);
+  left: 40%;
+}
+
+#nav-faq {
+  top: calc(66px + 50px*1);
+  left: 80%;
+}
+
+#nav-contact {
+  top: calc(66px + 50px*2);
+  left: 80%;
+}
+
+nav div.dropdown div.dropdown-content {
+  display: none;
+}
+
+nav div.dropdown:hover div.dropdown-content {
+  display: block;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32.3%;
+  margin: 0 0.5%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Moves the main into the correct spot*/
+main {
+  position: relative;
+  top: 116px;
+}
