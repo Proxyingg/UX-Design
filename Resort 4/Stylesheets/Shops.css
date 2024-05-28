@@ -1,137 +1,155 @@
-/*sets up the webpage*/
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'metal', serif;
-  z-index: 0;
-}
+  /*sets up the webpage*/
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'metal', serif;
+    z-index: 0;
+  }
 
-/*sets header*/
-header h1 {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
+  /*sets header*/
+  header h1 {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
 
-/*Nav bar*/
-nav button {
-  width: 20%;
-  height: 50px;
-  font-size: 17px;
-  background-color: #005f66;
-  color: white;
-  border: 0px;
-  position: fixed;
-  float: left;
-  cursor: pointer;
-  z-index: 1;
-}
+  /*Nav bar*/
+  nav button {
+    width: 20%;
+    height: 50px;
+    font-size: 17px;
+    background-color: #005f66;
+    color: white;
+    border: 0px;
+    position: fixed;
+    float: left;
+    cursor: pointer;
+    z-index: 1;
+  }
 
-nav button:hover {
-  background-color: #004c52;
-}
+  nav button:hover {
+    background-color: #004c52;
+  }
 
-#nav-home {
-  top: 66px;
-}
+  #nav-home {
+    top: 66px;
+  }
 
-#nav-gallery {
-  top: 66px;
-  left: 20%;
-}
+  #nav-gallery {
+    top: 66px;
+    left: 20%;
+  }
 
-#nav-explore {
-  top: 66px;
-  left: 40%;
-}
+  #nav-explore {
+    top: 66px;
+    left: 40%;
+  }
 
-#nav-rooms {
-  top: 66px;
-  left: 60%;
-}
+  #nav-rooms {
+    top: 66px;
+    left: 60%;
+  }
 
-#nav-support {
-  top: 66px;
-  left: 80%;
-}
+  #nav-support {
+    top: 66px;
+    left: 80%;
+  }
 
-#nav-shops {
-  top: calc(66px + 50px*1);
-  left: 40%;
-}
+  #nav-shops {
+    top: calc(66px + 50px*1);
+    left: 40%;
+  }
 
-#nav-restaurants {
-  top: calc(66px + 50px*2);
-  left: 40%;
-}
+  #nav-restaurants {
+    top: calc(66px + 50px*2);
+    left: 40%;
+  }
 
-#nav-attractions {
-  top: calc(66px + 50px*3);
-  left: 40%;
-}
+  #nav-attractions {
+    top: calc(66px + 50px*3);
+    left: 40%;
+  }
 
-#nav-facilities {
-  top: calc(66px + 50px*4);
-  left: 40%;
-}
+  #nav-facilities {
+    top: calc(66px + 50px*4);
+    left: 40%;
+  }
 
-#nav-faq {
-  top: calc(66px + 50px*1);
-  left: 80%;
-}
+  #nav-faq {
+    top: calc(66px + 50px*1);
+    left: 80%;
+  }
 
-#nav-contact {
-  top: calc(66px + 50px*2);
-  left: 80%;
-}
+  #nav-contact {
+    top: calc(66px + 50px*2);
+    left: 80%;
+  }
 
-nav div.dropdown div.dropdown-content {
-  display: none;
-}
+  nav div.dropdown div.dropdown-content {
+    display: none;
+  }
 
-nav div.dropdown:hover div.dropdown-content {
-  display: block;
-}
+  nav div.dropdown:hover div.dropdown-content {
+    display: block;
+  }
 
-/*moves the main into the correct spot*/
-main {
-  position: relative;
-  top: 116px;
-  padding-bottom: 50px;
-}
+  /*moves the main into the correct spot*/
+  main {
+    position: relative;
+    top: 116px;
+    padding-bottom: 50px;
+  }
 
-img {
-  display: block;
-  max-height: 200px;
-  object-fit: cover;
-  margin: 0 auto;
-}
+  img {
+    display: block;
+    max-height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
 
-shops {
-  display: block;
-  padding: 30px;
-  border: black solid;
-  border-radius: 20px;
-  width: 70%;
-  margin: 20px auto;
-  background-color: white;
-}
+  shops {
+    display: block;
+    padding: 30px;
+    border: black solid;
+    border-radius: 20px;
+    width: 70%;
+    margin: 20px auto;
+    background-color: white;
+  }
 
-#title {
-  text-align: center;
-}
+  #title {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    border: 3px solid white;
+    background-color: #616569;
+    opacity: 0.8;
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    top: 184px;
+  }
 
-#image {
-  width: 100%;
-}
+  titlebg {
+    background-image: url(https://t4.ftcdn.net/jpg/05/45/06/29/240_F_545062976_6nnZwwLLciRW84ETms2RPeWtLTyVbFlT.jpghttps://t4.ftcdn.net/jpg/05/45/06/29/240_F_545062976_6nnZwwLLciRW84ETms2RPeWtLTyVbFlT.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: block;
+  }
 
-p {
-  font-size: larger;
-}
+  #image {
+    width: 100%;
+  }
 
-a:hover {
-  color: lightblue;
-}
+  p {
+    font-size: larger;
+  }
+
+  a:hover {
+    color: lightblue;
+  }
