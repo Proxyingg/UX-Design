@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>FAQ</title>
-  <link rel="stylesheet" href="FAQ.css">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Support.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <h1>FAQ</h1>
+    <h1>Contact Us</h1>
     <nav>
       <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
       <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
@@ -29,50 +29,45 @@
         <button type="button" id="nav-support" disabled>Support &#x25BE</button>
         <div class="dropdown-content">
           <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
-          <a href="Support.html"><button type="button" id="nav-contact">Contact Us</button></a>
+          <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <h1 id="title">Frequently Asked Questions (Resort 4)</h1>
-      <h2>Room Booking Policies</h2>
-      <details>
-        <summary>How do I book a room?</summary>
-        <span>Booking can be done by selecting the Rooms page or at the E-kiosks at Resort 4.</span>
-      </details>
-      <details>
-        <summary>What is the age requirement to make a booking and for checking-in?</summary>
-        <span>18 years old and above for both.</span>
-      </details>
-      <details>
-        <summary>Is there a minimum number of nights to book?</summary>
-        <span>There is no minimum booking requirement unless it was part of a promotion.</span>
-      </details>
-      <h2>Check-In & Check Out</h2>
-      <details>
-        <summary>What are the check-in and check-out timings?</summary>
-        <span>Check-in starts from 9am. Self Check-out can be done anytime before 1pm on the day of exit.</span>
-      </details>
-      <details>
-        <summary>Can I request for late check-out?</summary>
-        <span>Request for late check-out is subject to room availability and charges will apply.</span>
-      </details>
-      <h2>Amenities and Services</h2>
-      <details>
-        <summary>Are pets allowed?</summary>
-        <span>Pets are not allowed.</span>
-      </details>
-      <details>
-        <summary>Are there additional amenities provided?</summary>
-        <span>Additional amenities can be requested by contacting the counter staff.</span>
-      </details> 
-      <details>
-        <summary>What is the difference between each room type?</summary>
-        <span>Refer to the description of each type of room for more information.</span>
-      </details>
-    <h2>Can't find your solution?</h2>
-    <a href="Support.html"><button type="button" id="contact">Contact Us</button></a>
+    <form action="Thank you.html">
+      <fieldset>
+        <h1 id="Contact">Contact us</h1>
+        <h2>* How can we help you?</h2>
+        <select name="How" id="How" required autofocus>
+          <option value="">--Please select an option--</option>
+          <option value="Enquiries">Enquiries</option>
+          <option value="Compliments">Compliments</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+        <span></span>
+        <h2>* Category</h2>
+        <select name="Category" id="Category" required autofocus>
+          <option value="">--Select a category--</option>
+          <option value="General">General</option>
+          <option value="In-room Decoration">In-room Decoration</option>
+          <option value="Room Booking">Room Booking</option>
+          <option value="Stay experience">Stay experience</option>
+          <option value="Website experience">Website experience</option>
+        </select>
+        <span></span>
+        <h2>Date of visit</h2>
+        <input type="date" value="" autofocus>
+        <h2>* Subject</h2>
+        <input type="text" required placeholder="Please enter subject here" autofocus>
+        <span></span>
+        <h2>* General Enquiry / Feedback</h2>
+        <input type="text" required placeholder="Please enter description here" autofocus>
+        <span></span>
+        <p>* Mandatory to be completed</p>
+      </fieldset>
+      <input id="Submit" type="submit" value="Submit">
+    </form>
   </main>
 </body>
 
