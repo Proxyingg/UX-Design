@@ -120,6 +120,17 @@
     background-color: white;
   }
 
+  shops button {
+    background-color: #005f66;
+    border: none;
+    color: white;
+    padding: 0 20px;
+  }
+
+  main button:hover {
+    background-color: #004c52;
+  }
+
   #title {
     text-align: center;
     color: white;
