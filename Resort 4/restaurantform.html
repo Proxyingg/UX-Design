@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Restaurant Contact Form</title>
-  <link href="restaurantform.css.css" rel="stylesheet">
+  <link href="Stylesheets/restaurantform.css.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Stylesheets/Template.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <h1>Restaurant</h1>
-  <div id = "topnavbar">
+  <div id="topnavbar">
     <header>
-        <nav>
-          <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
-          <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
-          <div class="dropdown">
-            <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
-            <div class="dropdown-content">
-              <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
-              <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
-              <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
-              <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
-            </div>
+      <nav>
+        <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+        <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+        <div class="dropdown">
+          <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+          <div class="dropdown-content">
+            <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+            <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+            <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+            <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
           </div>
-          <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
-          <div class="dropdown">
-            <button type="button" id="nav-support" disabled>Support &#x25BE</button>
-            <div class="dropdown-content">
-              <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
-              <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
-            </div>
+        </div>
+        <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
+        <div class="dropdown">
+          <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+          <div class="dropdown-content">
+            <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+            <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
           </div>
-        </nav>
-      </header>
-</div>
-  <div class = "contact">
-    <form action="https://api.web3forms.com/submit" method="POST" class = "contact-left" >
-      <div class = "contact-left-title">
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <div class="contact-left-title">
         <h2>Book Restaurant</h2>
         <hr>
       </div>
       <input type="hidden" name="access_key" value="9f4ec1af-cf8d-49a8-addf-8b9507ae2c70">
-      <input type = "text" name = "name" placeholder = "Your name" class = "contact-inputs" required>
-      <input type = "email" name = "email" placeholder = "Your email" class = "contact-inputs" required>
+      <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+      <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
       <h4>Time Slot:</h4>
-      <input type = "time" name = "time" placeholder = "Time Slot" class = "contact-inputs" required>
-      <input type = "text" name = "special requests" placeholder="Special Requests (If any)" class = "contact-inputs">
-      <button type = "Submit">Submit</button>
+      <input type="time" name="time" placeholder="Time Slot" class="contact-inputs" required>
+      <input type="text" name="special requests" placeholder="Special Requests (If any)" class="contact-inputs">
+      <button type="Submit">Submit</button>
     </form>
-    <div class = "contact-right">
+    <div class="contact-right">
 
     </div>
 
@@ -60,6 +62,3 @@
 </body>
 
 </html>
-
-
-
