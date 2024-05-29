@@ -104,68 +104,43 @@ main {
   padding-bottom: 50px;
 }
 
-form {
-  margin: 30px 0;
+#title {
+  text-align: center;
 }
 
-fieldset {
-  margin: 0 auto;
-  width: 50%;
-  padding-bottom: 20px;
+h2 {
+  margin: 0px 20px;
+}
+
+details {
+  margin: 0 50px;
+  font-size: x-large;
 }
 
 #Contact, h2, input, select {
   margin: 0 20px;
 }
 
-select {
-  width: 50%;
+summary:hover {
+  color: #005f66;
+  cursor: pointer;
 }
 
-#Submit {
-  display: block;
-  width: 20%;
-  margin: 10px auto;
+span {
+  padding: 0 10px;
+  border: 1px solid black;
+  margin: 30px;
+}
+
+#contact {
+  border: none;
+  margin: 0 50px;
+  padding: 0 10px;
   color: white;
-  background-color: green;
-  border-radius: 2px;
+  background-color: #005f66;
 }
 
-#Submit:hover{
+button:hover {
   cursor: pointer;
-  background-color: rgba(0, 128, 0, 0.7);
-}
-
-input:invalid+span::after {
-  position: absolute;
-  content: "\2716";
-  padding-left: 5px;
-}
-
-input:valid+span::after {
-  position: absolute;
-  content: "\2714";
-  padding-left: 5px;
-}
-
-select:invalid+span::after {
-  position: absolute;
-  content: "\2716";
-  padding-left: 5px;
-}
-
-select:valid+span::after {
-  position: absolute;
-  content: "\2714";
-  padding-left: 5px;
-}
-
-fieldset p {
-  margin-top: 20px;
-  margin-left: 5px;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-select:hover {
-  cursor: pointer;
+  color: #004c52;
 }
