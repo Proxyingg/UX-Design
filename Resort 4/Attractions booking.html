@@ -1,137 +1,139 @@
 <!DOCTYPE html>
 <html>
+<!--Make form input not 0-->
+<!--Add "Required" star (*)-->
 
 <head>
-  <title>Attractions Booking</title>
-  <meta name="author" content="Damien">
-  <link rel="stylesheet" href="Stylesheets/Template.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <title>Attractions Booking</title>
+    <meta name="author" content="Damien">
+    <link rel="stylesheet" href="Stylesheets/Template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
 
-  <style>
-    form {
-      padding: 10px;
-      font-size: 20px;
-      color: black;
-    }
+    <style>
+        form {
+            padding: 10px;
+            font-size: 20px;
+            color: black;
+        }
 
-    form legend {
-      font-weight: bold;
-      font-size: 30px;
-    }
+        form legend {
+            font-weight: bold;
+            font-size: 30px;
+        }
 
-    form label {
-      font-weight: normal;
-      font-size: 20px;
-    }
+        form label {
+            font-weight: normal;
+            font-size: 20px;
+        }
 
-    form input:not([type=range], [type=checkbox], [type=submit]),
-    form select {
-      font-size: 17px;
-      font-family: Arial, Helvetica, sans-serif;
-      position: relative;
-      width: 100%
-    }
+        form input:not([type=range], [type=checkbox], [type=submit]),
+        form select {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            width: 100%
+        }
 
-    form select option,
-    form select {
-      font-size: 17px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+        form select option,
+        form select {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-    form {
-      border: 2px solid black;
-      border-radius: 30px;
-      width: 80%;
-      margin: 20px auto;
-    }
+        form {
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 80%;
+            margin: 20px auto;
+        }
 
-    form legend {
-      text-align: center;
-    }
+        form legend {
+            text-align: center;
+        }
 
-    form input[type="submit"] {
-      display: block;
-      margin: 20px auto;
-      padding: 0px 10px;
-      font-size: 20px;
-      color: white;
-      background-color: #005f66;
-      border: none;
-    }
+        form input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 0px 10px;
+            font-size: 20px;
+            color: white;
+            background-color: #005f66;
+            border: none;
+        }
 
-    form input[type="submit"]:hover {
-      background-color: #004c52;
-    }
-  </style>
+        form input[type="submit"]:hover {
+            background-color: #004c52;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>Attractions Booking</h1>
-    <nav>
-      <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
-      <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
-      <div class="dropdown">
-        <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
-        <div class="dropdown-content">
-          <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
-          <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
-          <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
-          <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
-        </div>
-      </div>
-      <a href="Rooms & Suites.html"><button type="button" id="nav-rooms">Rooms & Suites</button></a>
-      <div class="dropdown">
-        <button type="button" id="nav-support" disabled>Support &#x25BE</button>
-        <div class="dropdown-content">
-          <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
-          <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <form action="payment.html">
-      <legend>Book your tickets</legend>
-      <label for="type">Select ticket type: </label>
-      <select id="type" value="None" required>
-        <option value=""> -Please select- </option>
-        <option value="amusement-park">Amusement park</option>
-        <option value="aquarium">Aquarium</option>
-      </select>
-      <br>
-      <label for="first-name">Name: </label>
-      <input type="text" id="first-name" name="first-name" placeholder="Full name as in passport or NRIC" required>
-      <br>
-      <label for="email">Email: </label>
-      <input type="email" id="email" name="email" placeholder="Used to send e-tickets" required>
-      <br>
-      <label for="tel">Tel:</label>
-      <input type="tel" id="tel" name="tel" placeholder="Secondary contact method" pattern="[0-9]{8}" required>
-      <br>
-      <label for="adult-day">Number of adult day passes: </label>
-      <input type="number" id="adult-day" name="adult-day" min="0" value="0" required>
-      <br>
-      <label for="child-day">Number of child day passes:</label>
-      <input type="number" id="child-day" name="child-day" min="0" value="0" required>
-      <br>
-      <label for="senior-day">Number of senior day passes:</label>
-      <input type="number" id="senior-day" name="senior-day" min="0" value="0" required>
-      <br>
-      <label for="adult-annual">Number of adult annual passes: </label>
-      <input type="number" id="adult-annual" name="adult-annual" min="0" value="0" required>
-      <br>
-      <label for="child-annual">Number of child annual passes:</label>
-      <input type="number" id="child-annual" name="child-annual" min="0" value="0" required>
-      <br>
-      <label for="senior-annual">Number of senior annual passes:</label>
-      <input type="number" id="senior-annual" name="senior-annual" min="0" value="0" required>
-      <br>
-      <input type="submit" value="Go and pay&nbsp;&nbsp;&nbsp;&nbsp;>">
-    </form>
-  </main>
+    <header>
+        <h1>Attractions Booking</h1>
+        <nav>
+            <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+            <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+                    <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+                    <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+                    <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+                </div>
+            </div>
+            <a href="Rooms & Suites.html"><button type="button" id="nav-rooms">Rooms & Suites</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+                    <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="payment.html">
+            <legend>Book your tickets</legend>
+            <label for="type">Select ticket type: </label>
+            <select id="type" value="None" required>
+                <option value=""> -Please select- </option>
+                <option value="amusement-park">Amusement park</option>
+                <option value="aquarium">Aquarium</option>
+            </select>
+            <br>
+            <label for="first-name">Name: </label>
+            <input type="text" id="first-name" name="first-name" placeholder="Full name as in passport or NRIC" required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Used to send e-tickets" required>
+            <br>
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel" placeholder="Secondary contact method" pattern="[0-9]{8}" required>
+            <br>
+            <label for="adult-day">Number of adult day passes: </label>
+            <input type="number" id="adult-day" name="adult-day" min="0" value="0" required>
+            <br>
+            <label for="child-day">Number of child day passes:</label>
+            <input type="number" id="child-day" name="child-day" min="0" value="0" required>
+            <br>
+            <label for="senior-day">Number of senior day passes:</label>
+            <input type="number" id="senior-day" name="senior-day" min="0" value="0" required>
+            <br>
+            <label for="adult-annual">Number of adult annual passes: </label>
+            <input type="number" id="adult-annual" name="adult-annual" min="0" value="0" required>
+            <br>
+            <label for="child-annual">Number of child annual passes:</label>
+            <input type="number" id="child-annual" name="child-annual" min="0" value="0" required>
+            <br>
+            <label for="senior-annual">Number of senior annual passes:</label>
+            <input type="number" id="senior-annual" name="senior-annual" min="0" value="0" required>
+            <br>
+            <input type="submit" value="Go and pay&nbsp;&nbsp;&nbsp;&nbsp;>">
+        </form>
+    </main>
 </body>
 
 </html>
