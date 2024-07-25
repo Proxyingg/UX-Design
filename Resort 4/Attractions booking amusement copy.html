@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<!--Make form input not 0-->
+<!--Add "Required" star (*)-->
+
+<head>
+    <title>Attractions Booking</title>
+    <meta name="author" content="Damien">
+    <link rel="stylesheet" href="Stylesheets/Template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+
+    <style>
+        form {
+            padding: 10px;
+            font-size: 20px;
+            color: black;
+        }
+
+        form legend {
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        form legend.sub-legend {
+            font-weight: normal;
+            font-size: 25px;
+        }
+
+        form label {
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        form input:not([type=range], [type=checkbox], [type=submit]),
+        form select {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            width: 100%
+        }
+
+        form select option,
+        form select {
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            border: 2px solid black;
+            border-radius: 30px;
+            width: 80%;
+            margin: 20px auto;
+            min-width: 570px;
+        }
+
+        form legend {
+            text-align: center;
+        }
+
+        form input.ticket {
+            left: calc(50% - 40px);
+            width: calc(50% - 15px);
+            height: 20px;
+        }
+
+        form input.ticket#seniorDay {
+            left: calc(50% - 46px);
+        }
+
+        form input.ticket#seniorAnnual {
+            left: calc(50% - 46px);
+        }
+
+        form input#tel {
+            width: calc(50% - 15px);
+            left: calc(50% - 104px);
+        }
+
+        form input#membercard {
+            width: calc(50% - 15px);
+            left: calc(50% - 270px);
+        }
+
+        form input#email {
+            width: calc(50% + 145px);
+            left: calc(50% - 204px);
+        }
+
+        form input#date {
+            width: calc(50% - 15px);
+            left: calc(50% - 115px);
+        }
+
+        form input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 0px 10px;
+            font-size: 20px;
+            color: white;
+            background-color: #005f66;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #004c52;
+        }
+    </style>
+    <script>
+        //whoop dee doo javasctit
+        function validateForm() {
+            if (document.getElementById("ticket-type").value == "") {
+                alert("Please select a ticket type");
+                return false;
+            }
+            if (document.getElementById("adultDay").value < 1) {
+                alert("Please enter a number greater than 0 for the adult day pass");
+                return false;
+            }
+            if (document.getElementById("childDay").value < 1) {
+                alert("Please enter a number greater than 0 for the child day pass");
+                return false;
+            }
+            if (document.getElementById("seniorDay").value < 1) {
+                alert("Please enter a number greater than 0 for the senior day pass");
+                return false;
+            }
+            if (document.getElementById("adultAnnual").value < 1) {
+                alert("Please enter a number greater than 0 for the adult annual pass");
+                return false;
+            }
+            if (document.getElementById("childAnnual").value < 1) {
+                alert("Please enter a number greater than 0 for the child annual pass");
+                return false;
+            }
+            if (document.getElementById("seniorAnnual").value < 1) {
+                alert("Please enter a number greater than 0 for the senior annual pass");
+                return false;
+            }
+            if (document.getElementById("membercard").value != 314159 && document.getElementById("membercard").value != "") {
+                alert("Whoopsie invalid ✨premium✨ member card number");
+                return false;
+            }
+            if (document.getElementById("tel").value < 1) {
+                alert("Please enter a valid phone number");
+                return false;
+            }
+            if (document.getElementById("email").value == "") {
+                alert("Please enter an email");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Amusement Park Tickets Booking</h1>
+        <nav>
+            <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+            <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+                    <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+                    <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+                    <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+                </div>
+            </div>
+            <a href="Rooms & Suites.html"><button type="button" id="nav-rooms">Rooms & Suites</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+                    <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form name="ticket booking" action="payment.html" onsubmit="return validateForm()">
+
+            <legend>Book your Amusenment Park tickets</legend>
+            <legend class="sub-legend">Choose you ticket type</legend>
+
+            <select id="ticket-type" name="ticket-type">
+                <option value="">Please select</option>
+                <option value="daypass">Day pass</option>
+                <option value="annualpass">Annual pass</option>
+            </select>
+
+            <legend class="sub-legend">Select day pass</legend>
+
+            <label for="adult">Adult *</label>
+            <input id="adultDay" name="adultDay" class="ticket" type="number">
+            <br />
+            <label for="child">Child *</label>
+            <input id="childDay" name="childDay" class="ticket" type="number">
+            <br />
+            <label for="senior">Senior *</label>
+            <input id="seniorDay" name="seniorDay" class="ticket" type="number">
+
+            <legend class="sub-legend">Select annual passes</legend>
+
+            <label for="adult">Adult *</label>
+            <input id="adultAnnual" name="adultAnnual" class="ticket" type="number">
+            <br />
+            <label for="child">Child *</label>
+            <input id="childAnnual" name="childAnnual" class="ticket" type="number">
+            <br />
+            <label for="senior">Senior *</label>
+            <input id="seniorAnnual" name="seniorAnnual" class="ticket" type="number">
+
+            <legend class="sub-legend">Booking details</legend>
+
+            <label>&#10024;Premuim&#10024; member card number</label>
+            <input id="membercard" name="membercard" type="number" placeholder="Leave blank if not applicable">
+            <br />
+            <label>Phone number *</label>
+            <input id="tel" name="tel" type="number">
+            <br />
+            <label>Email *</label>
+            <input id="email" name="email" type="email">
+            <br />
+            <label>Date of booking *</label>
+            <input id="date" name="date" type="date" min="2024-07-26" required>
+
+            <input type="submit" value="Go and pay&nbsp;&nbsp;&nbsp;&nbsp;>">
+        </form>
+    </main>
+</body>
+
+</html>

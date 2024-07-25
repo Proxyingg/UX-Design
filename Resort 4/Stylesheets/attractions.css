@@ -1,90 +1,90 @@
 main button {
-  font-size: 20px;
-  padding: 0 10px;
+    font-size: 20px;
+    padding: 0 10px;
 }
 
 main {
-  text-align: center;
+    text-align: center;
 }
 
 main p {
-  padding-left: 20px;
-  font-size: 20px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 main div.attraction {
-  border: 2px solid black;
-  width: 90%;
-  margin: 50px auto;
-  border-radius: 30px;
-  line-height: 1.6;
+    border: 2px solid black;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 30px;
+    line-height: 1.6;
 }
 
 main div :not(img, button) {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 main div button {
-  margin: 20px;
+    margin: 20px;
 }
 
 main img {
-  padding-left: 0px;
-  width: 100%;
-  z-index: -1000;
+    padding-left: 0px;
+    width: 100%;
+    z-index: -1000;
 }
 
 main button {
-  background-color: #005f66;
-  color: white;
-  border: none;
+    background-color: #005f66;
+    color: white;
+    border: none;
 
 }
 
 main button:hover {
-  background-color: #004c52;
+    background-color: #004c52;
 }
 
 main table {
-  margin: 0 auto;
-  width: 95%;
+    margin: 0 auto;
+    width: 95%;
 }
 
 main table,
 main table th,
 main table td {
-  border: 2px solid black;
-  border-collapse: collapse;
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
 main details {
-  width: 100%;
-  margin-top: -20px;
+    width: 100%;
+    margin-top: -20px;
 }
 
 main details div {
-  padding: 20px 20px 40px 20px;
+    padding: 20px 20px 40px 20px;
 }
 
 main details div table tr th#ticket-price {
-  width: 175px;
+    width: 175px;
 }
 
 main details div table tr td.ticket-type {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 main details div .table-footer {
-  text-align: left;
-  font-size: 12px;
-  line-height: 0.25;
+    text-align: left;
+    font-size: 12px;
+    line-height: 0.25;
 }
 
 main details div ul.table-footer {
-  margin-left: 50px;
-  padding-top: 0px;
+    margin-left: 50px;
+    padding-top: 0px;
 }
 
 main div p.indoor-txt {
-  clear: both;
+    clear: both;
 }
