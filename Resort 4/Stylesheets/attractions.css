@@ -18,6 +18,7 @@ main div.attraction {
     margin: 50px auto;
     border-radius: 30px;
     line-height: 1.6;
+    min-width: 700px;
 }
 
 main div :not(img, button) {
