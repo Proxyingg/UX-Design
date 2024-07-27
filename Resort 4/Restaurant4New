@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resort 4's Fine Dining Restaurant</title>
+  <link href="restaurant4css.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Stylesheets/Template.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+  
+</head>
+
+<h1>
+  Resort 4
+</h1>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<div id = "topnavbar">
+    <header>
+        <nav>
+          <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+          <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+          <div class="dropdown">
+            <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+            <div class="dropdown-content">
+              <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+              <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+              <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+              <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+            </div>
+          </div>
+          <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
+          <div class="dropdown">
+            <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+            <div class="dropdown-content">
+              <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+              <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+</div>
+
+  <div id="banner">
+    <div id = "bannerwords">
+        <p>Restaurant 4<p>
+    </div>
+    </div>
+
+<div id = "Introduction">
+        
+  
+  <div id = "IntroductionBox">
+  <p>
+    Welcome to Resort 4 's Exquisite Dining Experience! Residing within the heart of Singapore, our restaurant offers more than just mouth-watering dishes; it also provides a culinary journey like no other. 
+    At Restaurant 4, we pride ourselves on crafting unforgettable dining experiences, where every meal is a fusion of flavors, textures, and artistry.
+  </p>
+  </div>
+  </div>
+  <div id = "apples">
+
+  </div>
+
+
+    <p></p>
+  <div id = "menubox">
+
+  <button type="button" class="collapsible">Menu</button>
+  <div class="content" id = "menu">
+    <p>
+        <ul>
+            <div class="box">
+                <p>
+                    <ul>
+                        <li><div class = "box_header"><b>Appetizer</b></div>
+                            <ul>
+                                <li>Bruschetta</li>
+                                <li>Clam Chowder</li>
+                                <li>Boneless Chicken Breast</li>
+                                <li>Golden Shrimp</li>
+                                <li>"Sunbeams"</li>
+                            </ul>
+                        </li>
+              </ul>
+              <div class = "prices">
+                <ul>
+                  
+                  <li>6</li>
+                  <li>8</li>
+                  <li>8</li>
+                  <li>10</li>
+                  <li>15</li>
+                </ul>
+              </div>
+                </p>
+                </div>
+                <div class="box">
+                    <p>
+                    <ul>
+                        <li>
+                          <div class = "box_header"><b>Mains</b></div>
+                        <ul>
+                            <li>Fish and Chips</li>
+                            <li>Spaghetti Bolognese</li>
+                            <li>Legendary Steak</li>
+                            <li>Afghan Salad</li>
+                            <li>"Burning Flames"</li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <div class = "prices">
+                      <ul>
+                      <li>15</li>
+                      <li>12</li>
+                      <li>22</li>
+                      <li>15</li>
+                      <li>30</li>
+                    </ul>
+                    </div>
+                    </p>
+                </div>
+                <div class="box">
+                <p>                   
+                    <ul>
+                        <li>
+                          <div class = "box_header"><b>Dessert</b></div>
+                        <ul>
+                            <li>Chocolate Cake</li>
+                            <li>Blueberry Tart</li>
+                            <li>Marshmallow Creme</li>
+                            <li>Fruit Platter</li>
+                            <li>"Blizzardy Storm"</li>
+                        </ul>
+                    </li>
+                    
+                    </ul>
+                    <div class = "prices">
+                      <ul>
+                      <li>12</li>
+                      <li>10</li>
+                      <li>8</li>
+                      <li>8</li>
+                      <li>20</li>
+                    </ul>
+                    </div>
+                </p>
+                </div>
+                <div class="box">
+                    <p>                   
+                        <ul>
+                            <li>
+                              <div class = "box_header"><b>Beverages</b></div>
+                            <ul>
+                                <li>Black Coffee</li>
+                                <li>Green Tea</li>
+                                <li>Purified Water</li>
+                                <li>Ancient Fruit Wine</li>
+                                <li>"Miami Lights"
+                                </li>
+                            </ul>
+                        </li>
+                        </ul>
+                        <div class = "prices">
+                          <ul>
+                          <li>5</li>
+                          <li>5</li>
+                          <li>2</li>
+                          <li>15</li>
+                          <li>20</li>
+                        </ul>
+                        </div>
+                    </p>
+                </div>
+        </ul>
+    </p>
+  </div>
+  </div>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+    
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+</script>
+
+<div id = "video">
+<video id="background-video" autoplay loop muted poster>
+  <source src="C:\Users\mmoey\Downloads\EPIC HANDHELD B ROLL - Cinematic Cooking Promo Video (Lumix G7 + 42.5mm 1.7 Lens).mp4" type="video/mp4">
+</video>
+</div>
+
+
+  <div id = "promotions">
+    <h1 id = "promotiontitle">PROMOTIONS</h1>
+    <img src = "https://rocketskills.in/wp-content/uploads/2021/08/hydroponics-vegetable-farm-L65BADV-1024x683.jpg" alt = "hydroponic" id = "hydroponic">
+    <div id = promotiontextbox>
+      <p class = promotiontext>Introducing Garden 4, a secret project that has been worked on by the Restaurant 4 staff for over a year. This garden uses hydroponics to produce fresh, organic vegetables for consumption.</p>
+      <p class = promotiontext>From now until the end of September, Restaurant 4 is allowing customers to enter Garden 4, where the majority of our vegetables are sourced from. </p>
+      <p class = promotiontext>Customers will be able to pick out vegetables of their choosing, and request how they want their vegetables served. Cost will be based on the vegetables chosen.</p>
+    </div>
+  </div>
+
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <p class="author">Aaron X:&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+    <q>Wow this steak is so immaculate its like the flavours are melting in my tongue</q>
+  </div>
+  
+  <div class="mySlides">
+    <p class="author">Samuel T:&#11088;&#11088;&#11088;&#11088;&#11088; </p>
+    <q>Brilliant flavours all brought together into one plate!!!</q>
+  </div>
+  
+  <div class="mySlides">
+    <p class="author">Minos P: &#11088;&#11088;&#11088;&#11088;&#11088;</p>
+    <q>Service and food here are incredible. Definitely would come back again 10/10</q>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+
+    <div id ="main" class = "content">
+    <script src = "dhiljs.js"></script>
+
+    </div>
+
+    <div id = "booking">
+        <div id = "bookingtext">
+      
+        <h1>Operating Hours:</h1>
+        <h3>10:00am to 10:00pm Daily</h3>
+        <p></p>
+        <h1>Enquires</h1>
+
+        <h3>+65 9127 8282</h3>
+        
+        <a id = "bookbutton" href="file:///C:/Users/mmoey/OneDrive/WebDev/Practical/Week1/restaurantform.html" target="_blank">Click here to book!</a>
+        </div>
+        <div id = "bookingimage">
+        
+        </div>
+
+
+
+</html>
