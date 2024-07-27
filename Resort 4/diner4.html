@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<title>Resort 4 Diner</title>
+<meta charset="UTF-8">
+<link href="diner4.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+</head>
+<body>
+<header>
+  <div id = "headertext">
+  Resort 4
+  </div>
+</header>
+<!-- Links (sit on top) -->
+<div id = "topnavbar">
+  <header>
+      <nav>
+        <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+        <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+        <div class="dropdown">
+          <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+          <div class="dropdown-content">
+            <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+            <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+            <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+            <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+          </div>
+        </div>
+        <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
+        <div class="dropdown">
+          <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+          <div class="dropdown-content">
+            <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+            <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div id="thecafe">
+<span class="w3-text-white" style="font-size:90px", background-color:grey>the<br>Diner</span>
+</div>
+
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="grey-background">
+
+<!-- About Container -->
+<div class="container" id="about">
+<div class="content" style="max-width:700px">
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE DINER</span></h5>
+<p>Diner 4 was founded in 1 by Little John in Singapore. Originally meant to be a standalone diner, this restaurant now has made its way into the hearts of those who come and stay at Resort 4.</p>
+
+<p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+<div id ="quotebox">
+<p><i><b>"We strive to serve excellent food at affordable rates"</b></i></p>
+<p>-Little John, owner of Diner 4.</p>
+</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://assets.cntraveller.in/photos/618e82491af22a472dbf4f9e/16:9/w_2016,h_1134,c_limit/Cafe%20Duco%20Interiors-10.jpg" style="width:100%" >
+  <img class="mySlides" src="https://www.shutterstock.com/image-photo/3d-render-cafe-bar-restaurant-600nw-1415138246.jpg" style="width:100%" >
+  <img class="mySlides" src="https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small_2x/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg" style="width:100%">
+  <img class="mySlides" src="https://t3.ftcdn.net/jpg/02/18/53/26/360_F_218532663_Meqbe06Mqr4X7DV3vfM4usMkfML47thJ.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  //For the image slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+</div>
+
+<div id = "promotions">
+  <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ONGOING PROMOTIONS</span></h5>
+  <img src = "impossibleburger2.png" alt = "Promo 1">
+  <img src = "childrendeal2.png" alt = "Promo 2">
+</div>
+
+
+
+
+
+
+<!-- Menu Container -->
+<div class="container" id="menu">
+<div class="content" style="max-width:700px">
+
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+<div class="buttons">
+<a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+<div class="w3-col s6 tablink">Eat</div>
+</a>
+<div id = "drink-button">
+<a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+</div>
+<div class="w3-col s6 tablink">Drink</div>
+</a>
+</div>
+
+<div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+<h5>Bread Sticks</h5>
+<p class="w3-text-grey">Some Bread Sticks 5.50</p><br>
+
+<h5>All Day Breakfast</h5>
+<p class="w3-text-grey">Comes with crispy bacon, scrambled eggs and German sausages 7.00</p><br>
+
+<h5>Fish and Chips</h5>
+<p class="w3-text-grey">Deep fried cod served with lightly salted potato crisps. 7.50</p><br>
+
+<h5>Spaghetti bolognese</h5>
+<p class="w3-text-grey">Thick tomato sauce with minced beef  7.50</p><br>
+
+<h5>Chicken Chop</h5>
+<p class="w3-text-grey">Also served with potato crisps and mushroom sauce 8.50</p>
+</div>
+
+<div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+<h5>Coffee</h5>
+<p class="w3-text-grey">Milk and sugar also available 2.50</p><br>
+
+<h5>Milo</h5>
+<p class="w3-text-grey">A Singaporean classic 4.50</p><br>
+
+<h5>Water</h5>
+<p class="w3-text-grey">Plain water 1.00</p><br>
+
+<h5>Tea</h5>
+<p class="w3-text-grey">Can be served with ice 2.50</p><br>
+
+<h5>Soda</h5>
+<p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+</div>  
+
+<!-- Contact/Area Container -->
+<div class="container" id="where" style="padding-bottom:32px;">
+<div class="content" style="max-width:700px">
+
+<p>Find us at Resort 4's Dining Sector.</p>
+
+<p>Opening hours are from 7 am to 9pm daily.</p>
+
+<p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+
+
+<!-- End page content -->
+</div>
+<!-- Footer -->
+
+
+<div id = "bookbuttonpart">
+<a id = "bookbutton" href="file:///C:/Users/mmoey/OneDrive/WebDev/Practical/Week1/dinerform.html" target="_blank">Click here to book!</a>
+</div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+var i, x, tablinks;
+x = document.getElementsByClassName("menu");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < x.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+}
+document.getElementById(menuName).style.display = "block";
+evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
