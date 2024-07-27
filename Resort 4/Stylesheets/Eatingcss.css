@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: #D4D4D4;
+}
+body{
+    height:1100px;
+}
+#Eating {
+    text-align: center;
+    padding:100px;
+    margin:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+}
+
+h1{
+    font-family:Metal;
+    margin-left:10px;
+}
+
+
+h2{
+    margin:10px;
+    font-family:Metal;
+}
+.box {
+    float: left;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 300px;
+}
+p{
+    padding:2px;
+}
+
+#dinerboxes {
+    padding: 20px;
+    padding-right: 10px;
+    
+}
+
+/*Nav bar*/
+nav button {
+    width: 20%;
+    height: 50px;
+    font-size: 17px;
+    background-color: #005f66;
+    color: white;
+    border: 0px;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  nav button:hover {
+    background-color: #004c52;
+  }
+  
+  #nav-home {
+    top: 66px;
+    left: 0px;
+  }
+  
+  #nav-gallery {
+    top: 66px;
+    left: 20%;
+  }
+  
+  #nav-explore {
+    top: 66px;
+    left: 40%;
+  }
+  
+  #nav-rooms {
+    top: 66px;
+    left: 60%;
+  }
+  
+  #nav-support {
+    top: 66px;
+    left: 80%;
+  }
+  
+  #nav-shops {
+    top: calc(66px + 50px*1);
+    left: 40%;
+  }
+  
+  #nav-restaurants {
+    top: calc(66px + 50px*2);
+    left: 40%;
+  }
+  
+  #nav-attractions {
+    top: calc(66px + 50px*3);
+    left: 40%;
+  }
+  
+  #nav-facilities {
+    top: calc(66px + 50px*4);
+    left: 40%;
+  }
+  
+  #nav-faq {
+    top: calc(66px + 50px*1);
+    left: 80%;
+  }
+  
+  #nav-contact {
+    top: calc(66px + 50px*2);
+    left: 80%;
+  }
+  
+  nav div.dropdown div.dropdown-content {
+    display: none;
+  }
+  
+  nav div.dropdown:hover div.dropdown-content {
+    display: block;
+  }
+  
+  /*Moves the main into the correct spot*/
+  main {
+    position: relative;
+    top: 50px;
+  }
