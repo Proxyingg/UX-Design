@@ -111,37 +111,36 @@
     <script>
         //whoop dee doo javasctit
         function validateForm() {
-            if (document.getElementById("ticket-type").value == "") {
-                alert("Please select a ticket type");
+            if (document.getElementById("adultDay").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the adult day pass");
                 return false;
             }
-            if (document.getElementById("adultDay").value < 1) {
-                alert("Please enter a number greater than 0 for the adult day pass");
+            if (document.getElementById("childDay").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the child day pass");
                 return false;
             }
-            if (document.getElementById("childDay").value < 1) {
-                alert("Please enter a number greater than 0 for the child day pass");
+            if (document.getElementById("seniorDay").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the senior day pass");
                 return false;
             }
-            if (document.getElementById("seniorDay").value < 1) {
-                alert("Please enter a number greater than 0 for the senior day pass");
+            if (document.getElementById("adultAnnual").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the adult annual pass");
                 return false;
             }
-            if (document.getElementById("adultAnnual").value < 1) {
-                alert("Please enter a number greater than 0 for the adult annual pass");
+            if (document.getElementById("childAnnual").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the child annual pass");
                 return false;
             }
-            if (document.getElementById("childAnnual").value < 1) {
-                alert("Please enter a number greater than 0 for the child annual pass");
+            if (document.getElementById("seniorAnnual").value < 0) {
+                alert("Please enter a number greater than or equal to 0 for the senior annual pass");
                 return false;
             }
-            if (document.getElementById("seniorAnnual").value < 1) {
-                alert("Please enter a number greater than 0 for the senior annual pass");
-                return false;
-            }
-            if (document.getElementById("membercard").value != 314159 && document.getElementById("membercard").value != "") {
+            var isMember = false
+            if (document.getElementById("membercard").value != 314159265358979323 && document.getElementById("membercard").value != "") {
                 alert("Whoopsie invalid ✨premium✨ member card number");
                 return false;
+            } else if (document.getElementById("membercard").value != "") {
+                isMember = true
             }
             if (document.getElementById("tel").value < 1) {
                 alert("Please enter a valid phone number");
@@ -151,6 +150,24 @@
                 alert("Please enter an email");
                 return false;
             }
+            var adultDay = document.getElementById("adultDay").value;
+            var childDay = document.getElementById("childDay").value;
+            var seniorDay = document.getElementById("seniorDay").value;
+            var adultAnnual = document.getElementById("adultAnnual").value;
+            var childAnnual = document.getElementById("childAnnual").value;
+            var seniorAnnual = document.getElementById("seniorAnnual").value;
+
+            var cost = adultDay * 150 + childDay * 105 + seniorDay * 90
+            cost += adultAnnual * 1250 + childAnnual * 875 + seniorAnnual * 750
+
+            if (adultDay >= 2 && childDay >= 1 && seniorDay >= 1) {
+                cost *= 0.95
+            }
+            if (isMember) {
+                cost *= 0.9
+            }
+
+            return confirm(`Your subtotal is S$${cost}.`);
         }
     </script>
 </head>
@@ -184,13 +201,6 @@
         <form name="ticket booking" action="payment.html" onsubmit="return validateForm()">
 
             <legend>Book your Amusenment Park tickets</legend>
-            <legend class="sub-legend">Choose you ticket type</legend>
-
-            <select id="ticket-type" name="ticket-type">
-                <option value="">Please select</option>
-                <option value="daypass">Day pass</option>
-                <option value="annualpass">Annual pass</option>
-            </select>
 
             <legend class="sub-legend">Select day pass</legend>
 
