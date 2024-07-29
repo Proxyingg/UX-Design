@@ -433,3 +433,16 @@ q {font-style: italic;}
   padding:20px;
   height:80%;
 }
+#slideshow-text{
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #F6C604);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left:5px;
+  margin: 10px;
+  font-family: Metal;
+  text-align: center;
+}
