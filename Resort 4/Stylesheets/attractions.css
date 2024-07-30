@@ -89,3 +89,11 @@ main details div ul.table-footer {
 main div p.indoor-txt {
     clear: both;
 }
+
+main summary:hover {
+    cursor: pointer;
+}
+
+main summary {
+    font-size: 25px;
+}
