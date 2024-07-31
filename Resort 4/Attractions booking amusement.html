@@ -142,29 +142,40 @@
             } else if (document.getElementById("membercard").value != "") {
                 isMember = true
             }
-            if (document.getElementById("tel").value < 1) {
-                alert("Please enter a valid phone number");
+            if (document.getElementById("tel").value < 1 || document.getElementById("tel").value.length != 8) {
+                alert("Please enter a valid phone number with 8 digits");
                 return false;
             }
             if (document.getElementById("email").value == "") {
-                alert("Please enter an email");
+                alert("Please enter an email address");
                 return false;
             }
+            selectedDate = new Date(document.getElementById("date").value);
+            today = new Date();
+            if (selectedDate <= today) {
+                alert("Please select a date after today")
+                return false
+            }
+
             var adultDay = document.getElementById("adultDay").value;
             var childDay = document.getElementById("childDay").value;
             var seniorDay = document.getElementById("seniorDay").value;
             var adultAnnual = document.getElementById("adultAnnual").value;
             var childAnnual = document.getElementById("childAnnual").value;
             var seniorAnnual = document.getElementById("seniorAnnual").value;
+            if (adultDay + childDay + seniorDay + adultAnnual + childAnnual + seniorAnnual == 0) {
+                alert("Please make a booking for one or more tickets");
+                return false;
+            }
 
-            var cost = adultDay * 150 + childDay * 105 + seniorDay * 90
-            cost += adultAnnual * 1250 + childAnnual * 875 + seniorAnnual * 750
+            var cost = adultDay * 150 + childDay * 105 + seniorDay * 90;
+            cost += adultAnnual * 1250 + childAnnual * 875 + seniorAnnual * 750;
 
             if (adultDay >= 2 && childDay >= 1 && seniorDay >= 1) {
-                cost *= 0.95
+                cost *= 0.95;
             }
             if (isMember) {
-                cost *= 0.9
+                cost *= 0.9;
             }
 
             return confirm(`Your subtotal is S$${cost}.`);
@@ -236,7 +247,7 @@
             <input id="email" name="email" type="email">
             <br />
             <label>Date of booking *</label>
-            <input id="date" name="date" type="date" min="2024-07-29" required>
+            <input id="date" name="date" type="date" required>
 
             <input type="submit" value="Go and pay&nbsp;&nbsp;&nbsp;&nbsp;>">
         </form>

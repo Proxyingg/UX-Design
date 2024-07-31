@@ -8,7 +8,7 @@ main {
 }
 
 main p {
-    padding-left: 20px;
+    padding: 0 20px;
     font-size: 20px;
 }
 
@@ -21,7 +21,7 @@ main div.attraction {
     min-width: 700px;
 }
 
-main div :not(img, button) {
+main div :not(img, button, summary) {
     padding-top: 20px;
 }
 
@@ -90,10 +90,16 @@ main div p.indoor-txt {
     clear: both;
 }
 
-main summary:hover {
+/* main summary:hover {
     cursor: pointer;
+    background-color: #004c52;
 }
 
 main summary {
-    font-size: 25px;
-}
+    color: white;
+    font-size: 20px;
+    background-color: #005f66;
+    padding: 5px 0;
+    margin: 10px auto;
+    width: 200px;
+} */
