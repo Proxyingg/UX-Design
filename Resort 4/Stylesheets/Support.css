@@ -114,7 +114,11 @@ fieldset {
   padding-bottom: 20px;
 }
 
-#Contact, h2, input, select {
+#Contact,
+h2,
+input,
+select,
+textarea {
   margin: 0 20px;
 }
 
@@ -128,32 +132,42 @@ select {
   margin: 10px auto;
 }
 
-input:invalid+span::after {
-  position: absolute;
-  content: "\2716";
-  padding-left: 5px;
-}
-
-input:valid+span::after {
-  position: absolute;
-  content: "\2714";
-  padding-left: 5px;
-}
-
+input:invalid+span::after,
+textarea:invalid+span::after,
 select:invalid+span::after {
   position: absolute;
   content: "\2716";
   padding-left: 5px;
+  color: red;
 }
 
+input:valid+span::after,
+textarea:valid+span::after,
 select:valid+span::after {
   position: absolute;
   content: "\2714";
   padding-left: 5px;
+  color: green;
 }
 
 fieldset p {
   margin-top: 20px;
   margin-left: 5px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+textarea {
+  padding-left: 5px;
+  width: 70%;
+  height: 70px;
+  resize: none;
+}
+
+#date, #subject, #general {
+  display: none;
+}
+
+.required::after {
+  content: "*";
+  color: red;
 }
