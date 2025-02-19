@@ -1,92 +1,94 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Restaurant Contact Form</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Stylesheets/restaurantform.css.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
- 
+    <title>Restaurant Contact Form</title>
+    <link rel="stylesheet" href="Stylesheets/Template.css">
+    <link rel="stylesheet" href="Stylesheets/restaurantform.css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 
-  <h1>Resort 4</h1>
-  <div id = "topnavbar">
-    <header>
-        <nav>
-          <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
-          <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
-          <div class="dropdown">
-            <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
-            <div class="dropdown-content">
-              <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
-              <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
-              <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
-              <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
-            </div>
-          </div>
-          <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
-          <div class="dropdown">
-            <button type="button" id="nav-support" disabled>Support &#x25BE</button>
-            <div class="dropdown-content">
-              <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
-              <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
-            </div>
-          </div>
-        </nav>
-      </header>
-</div>
-
-  <div class = "contact">
-    <form action="https://api.web3forms.com/submit" method="POST" class = "contact-left" name = "form" id = "form"  >
-      <div class = "contact-left-title">
-        <h2>Book Restaurant</h2>
-        <hr>
-      </div>
-  
-      <input type="hidden" name="access_key" value="9f4ec1af-cf8d-49a8-addf-8b9507ae2c70">
-      <input type = "text" name = "name" placeholder = "Your name*" class = "contact-inputs" required>
-      <input type = "email" name = "email*" placeholder = "Your email*" class = "contact-inputs" required>
-      <input type = "date" name = "dateInput" id = "dateInput" placeholder = "date" class = "contact-inputs" required>
-      <input type = "time" name = "time" placeholder = "Time Slot" class = "contact-inputs" min = "10:00" max = "22:00" required>
-      <input type = "number" name = "Number of people*" placeholder = "Number of people*" class = "contact-inputs" required>
-      <input type = "text" name = "special requests" placeholder="Special Requests (If any)" class = "contact-inputs">
-      
-      <button type = "Submit">Submit</button>
-    </form>
-    <div class = "contact-right">
-
+    <h1>Resort 4</h1>
+    <div id="topnavbar">
+        <header>
+            <nav>
+                <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+                <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+                <div class="dropdown">
+                    <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+                    <div class="dropdown-content">
+                        <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+                        <a href="Eatingmenu.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+                        <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+                        <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+                    </div>
+                </div>
+                <a href="Room Selection.html"><button type="button" id="nav-rooms">Rooms</button></a>
+                <div class="dropdown">
+                    <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+                    <div class="dropdown-content">
+                        <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+                        <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
     </div>
 
-  </div>
-  <script>
-    document.getElementById('form').addEventListener('submit', function(event) {
-        // Prevent the form from submitting if the validation fails
-        event.preventDefault();
+    <div class="contact">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" name="form" id="form">
+            <div class="contact-left-title">
+                <h2>Book Restaurant</h2>
+                <hr>
+            </div>
 
-        // Get the value of the date input
-        const dateInput = document.getElementById('dateInput').value;
-        const errorMessage = document.getElementById('error-message');
+            <input type="hidden" name="access_key" value="9f4ec1af-cf8d-49a8-addf-8b9507ae2c70">
+            <input type="text" name="name" placeholder="Your name*" class="contact-inputs" required>
+            <input type="email" name="email*" placeholder="Your email*" class="contact-inputs" required>
+            <input type="date" name="dateInput" id="dateInput" placeholder="date" class="contact-inputs" required>
+            <input type="time" name="time" placeholder="Time Slot" class="contact-inputs" min="10:00" max="22:00" required>
+            <input type="number" name="Number of people*" placeholder="Number of people*" class="contact-inputs" required>
+            <input type="text" name="special requests" placeholder="Special Requests (If any)" class="contact-inputs">
 
-        // Get today's date in YYYY-MM-DD format
-        const today = new Date();
-        const todayString = today.toISOString().split('T')[0];
+            <button type="Submit">Submit</button>
+        </form>
+        <div class="contact-right">
 
-        // Compare the input date with today's date
-        if (dateInput <= todayString) {
-            // If the date is not greater than today
-            alert('Please select a date greater than today.')
-        } else{
-          alert("Your form has been submitted.")
-        }
-        
-        
-    });
-</script>
- 
-    
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('form').addEventListener('submit', function (event) {
+            // Prevent the form from submitting if the validation fails
+            event.preventDefault();
+
+            // Get the value of the date input
+            const dateInput = document.getElementById('dateInput').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Get today's date in YYYY-MM-DD format
+            const today = new Date();
+            const todayString = today.toISOString().split('T')[0];
+
+            // Compare the input date with today's date
+            if (dateInput <= todayString) {
+                // If the date is not greater than today
+                alert('Please select a date greater than today.')
+            } else {
+                alert("Your form has been submitted.")
+            }
+
+
+        });
+    </script>
+
+
 </body>
 
 </html>

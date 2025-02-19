@@ -2,125 +2,125 @@
 <html>
 
 <head>
-  <title>Contact Us</title>
-  <meta name="author" content="Xiao Yao">
-  <link rel="stylesheet" href="Stylesheets/Support.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
-  <script>
-    function formc() {
-      date.style.display = 'none';
-      subject.style.display = 'none';
-      general.style.display = 'none';
-      document.getElementById("dinput").removeAttribute('required');
-      document.getElementById("sinput").removeAttribute('required');
-      document.getElementById("ginput").removeAttribute('required');
-      if (document.getElementById("Category").value === 'General') {
-        subject.style.display = 'block';
-        general.style.display = 'block';
-        document.getElementById("sinput").setAttribute('required', 'required');
-        document.getElementById("ginput").setAttribute('required', 'required');
-      }
-      if (document.getElementById("Category").value === 'In-room Decoration') {
-        date.style.display = 'block';
-        general.style.display = 'block';
-        document.getElementById("dinput").setAttribute('required', 'required');
-        document.getElementById("ginput").setAttribute('required', 'required');
-      }
-      if (document.getElementById("Category").value === 'Room Booking') {
-        general.style.display = 'block';
-        date.style.display = 'block';
-        document.getElementById("ginput").setAttribute('required', 'required');
-        document.getElementById("dinput").setAttribute('required', 'required');
-      }
-      if (document.getElementById("Category").value === 'Website Experience') {
-        general.style.display = 'block';
-        document.getElementById("ginput").setAttribute('required', 'required');
-      }
-      if (document.getElementById("Category").value === 'Stay Experience') {
-        date.style.display = 'block';
-        general.style.display = 'block';
-        document.getElementById("dinput").setAttribute('required', 'required');
-        document.getElementById("ginput").setAttribute('required', 'required');
-      }
-      if (document.getElementById("Category").value === 'Website Experience') {
-        subject.style.display ='block';
-        general.style.display = 'block';
-        document.getElementById("sinput").setAttribute('required', 'required');
-        document.getElementById("ginput").setAttribute('required', 'required');
-      }
-    }
-  </script>
+    <title>Contact Us</title>
+    <meta name="author" content="Xiao Yao">
+    <link rel="stylesheet" href="Stylesheets/Support.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
+    <script>
+        function formc() {
+            date.style.display = 'none';
+            subject.style.display = 'none';
+            general.style.display = 'none';
+            document.getElementById("dinput").removeAttribute('required');
+            document.getElementById("sinput").removeAttribute('required');
+            document.getElementById("ginput").removeAttribute('required');
+            if (document.getElementById("Category").value === 'General') {
+                subject.style.display = 'block';
+                general.style.display = 'block';
+                document.getElementById("sinput").setAttribute('required', 'required');
+                document.getElementById("ginput").setAttribute('required', 'required');
+            }
+            if (document.getElementById("Category").value === 'In-room Decoration') {
+                date.style.display = 'block';
+                general.style.display = 'block';
+                document.getElementById("dinput").setAttribute('required', 'required');
+                document.getElementById("ginput").setAttribute('required', 'required');
+            }
+            if (document.getElementById("Category").value === 'Room Booking') {
+                general.style.display = 'block';
+                date.style.display = 'block';
+                document.getElementById("ginput").setAttribute('required', 'required');
+                document.getElementById("dinput").setAttribute('required', 'required');
+            }
+            if (document.getElementById("Category").value === 'Website Experience') {
+                general.style.display = 'block';
+                document.getElementById("ginput").setAttribute('required', 'required');
+            }
+            if (document.getElementById("Category").value === 'Stay Experience') {
+                date.style.display = 'block';
+                general.style.display = 'block';
+                document.getElementById("dinput").setAttribute('required', 'required');
+                document.getElementById("ginput").setAttribute('required', 'required');
+            }
+            if (document.getElementById("Category").value === 'Website Experience') {
+                subject.style.display = 'block';
+                general.style.display = 'block';
+                document.getElementById("sinput").setAttribute('required', 'required');
+                document.getElementById("ginput").setAttribute('required', 'required');
+            }
+        }
+    </script>
 </head>
 
 <body>
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
-      <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
-      <div class="dropdown">
-        <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
-        <div class="dropdown-content">
-          <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
-          <a href="Restaurants.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
-          <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
-          <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
-        </div>
-      </div>
-      <a href="Rooms & Suites.html"><button type="button" id="nav-rooms">Rooms & Suites</button></a>
-      <div class="dropdown">
-        <button type="button" id="nav-support" disabled>Support &#x25BE</button>
-        <div class="dropdown-content">
-          <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
-          <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <form action="Thank you.html">
-      <fieldset>
-        <h1 id="Contact">Contact us</h1>
-        <h2>How can we help you? *</h2>
-        <select name="How" id="How" required autofocus>
-          <option value="">--Please select an option--</option>
-          <option value="Enquiries">Enquiries</option>
-          <option value="Compliments">Compliments</option>
-          <option value="Feedback">Feedback</option>
-        </select>
-        <span></span>
-        <h2>Category *</h2>
-        <select name="Category" id="Category" required autofocus onchange="formc()">
-          <option value="">--Select a category--</option>
-          <option value="General">General</option>
-          <option value="In-room Decoration">In-room Decoration</option>
-          <option value="Room Booking">Room Booking</option>
-          <option value="Stay Experience">Stay experience</option>
-          <option value="Website Experience">Website experience</option>
-        </select>
-        <span></span>
-        <div id="date">
-          <h2>Date of visit *</h2>
-          <input type="date" autofocus id="dinput">
-          <span></span>
-        </div>
-        <div id="subject">
-          <h2>Subject *</h2>
-          <textarea placeholder="Please enter subject here" autofocus id="sinput"></textarea>
-          <span></span>
-        </div>
-        <div id="general">
-          <h2>General Enquiry / Feedback *</h2>
-          <textarea placeholder="Please enter description here" autofocus id="ginput"></textarea>
-          <span></span>
-        </div>
-        <p>Mandatory to be completed *</p>
-      </fieldset>
-      <input id="Submit" type="submit" value="Submit">
-    </form>
-  </main>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="Home page.html"><button type="button" id="nav-home">Home</button></a>
+            <a href="Gallery.html"><button type="button" id="nav-gallery">Gallery</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-explore" disabled>Explore &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="Shops.html"><button type="button" id="nav-shops">Shops</button></a>
+                    <a href="Eatingmenu.html"><button type="button" id="nav-restaurants">Restaurants</button></a>
+                    <a href="Attractions.html"><button type="button" id="nav-attractions">Attractions</button></a>
+                    <a href="Facilities.html"><button type="button" id="nav-facilities">Facilities</button></a>
+                </div>
+            </div>
+            <a href="Rooms & Suites.html"><button type="button" id="nav-rooms">Rooms & Suites</button></a>
+            <div class="dropdown">
+                <button type="button" id="nav-support" disabled>Support &#x25BE</button>
+                <div class="dropdown-content">
+                    <a href="FAQ.html"><button type="button" id="nav-faq">FAQ</button></a>
+                    <a href="Support.html"><button type="button" id="nav-contact">Contact us</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="Thank you.html">
+            <fieldset>
+                <h1 id="Contact">Contact us</h1>
+                <h2>How can we help you? *</h2>
+                <select name="How" id="How" required autofocus>
+                    <option value="">--Please select an option--</option>
+                    <option value="Enquiries">Enquiries</option>
+                    <option value="Compliments">Compliments</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+                <span></span>
+                <h2>Category *</h2>
+                <select name="Category" id="Category" required autofocus onchange="formc()">
+                    <option value="">--Select a category--</option>
+                    <option value="General">General</option>
+                    <option value="In-room Decoration">In-room Decoration</option>
+                    <option value="Room Booking">Room Booking</option>
+                    <option value="Stay Experience">Stay experience</option>
+                    <option value="Website Experience">Website experience</option>
+                </select>
+                <span></span>
+                <div id="date">
+                    <h2>Date of visit *</h2>
+                    <input type="date" autofocus id="dinput">
+                    <span></span>
+                </div>
+                <div id="subject">
+                    <h2>Subject *</h2>
+                    <textarea placeholder="Please enter subject here" autofocus id="sinput"></textarea>
+                    <span></span>
+                </div>
+                <div id="general">
+                    <h2>General Enquiry / Feedback *</h2>
+                    <textarea placeholder="Please enter description here" autofocus id="ginput"></textarea>
+                    <span></span>
+                </div>
+                <p>Mandatory to be completed *</p>
+            </fieldset>
+            <input id="Submit" type="submit" value="Submit">
+        </form>
+    </main>
 </body>
 
 </html>
